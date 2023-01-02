@@ -136,6 +136,15 @@ body::-webkit-scrollbar {
   h2 {
     font-size: 1.5vw;
   }
+  h6 {
+    font-size: 1vw;
+  }
+  a {
+    font-size: 1vw;
+  }
+  span {
+    font-size: 1vw;
+  }
   .navbar-brand {
     font-family: "Another Danger";
     font-size: 2vw;
