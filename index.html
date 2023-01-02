@@ -16,34 +16,77 @@
 
     </head>
 
-    <main>
+    <main class="prevent-select">
         <header id="top">
 
-            <!-- Navbar -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-xl">
-                  <a class="navbar-brand" href="#top">Nightmare</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
+          <!-- Navbar -->
+          <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#top">Nightmare</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
             
-                  <div class="collapse navbar-collapse" id="navbarsExample07XL">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#about">About</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                      </li>
-                  </div>
-                </div>
-              </nav>
+              <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#top">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#projects">Projects</a>
+                </li>
+              </div>
+            </div>
+          </nav>
 
         </header>
         <body>
-            <div class="about cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-                <h1 class="jumbotron prevent-select">Nightmare</h1>
+          
+          <!-- Jumbotron -->
+          <div class="jumbotron-colors cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+            <h1 class="jumbotron">Nightmare</h1>
+          </div>
+
+          <!-- About me -->
+          <div class="body-text about" id="about">
+            <h1>About me</h1>
+            <hr>
+            <p>
+              Hey! My name is Oliver Kennewell, I am a 16 year old developer and go by the alias 'Nightmare' online. I started my programming saga back in 2017 learning the JavaScript programming lanugage by creating Discord bots. I started off small, creating simple reactions and responses that ran when detecting a specific word or phrase in a users message. Years later, I still endulge in programming Discord bots, but have also gone onto learning new programming languages like C# and Assembly. 
+            </p>
+            <br>
+            <h2>What projects are you currently working on?</h2>
+            <p>
+              Currently, I only have one project for an upcoming Discord bot, which goes by the name 'Kenji', more about that can be found on the 'Projects' page. Other than Kenji, I have no other ongoing projects, however I have lots planned for the future. My plans include: AI, Game Development and more.
+            </p>
+            <br>
+            <h2>What are your hobbies and interests?</h2>
+            <p>
+              Other than programming, music is a big part of my life, I enjoy just listening to music when bored, or working on my projects. My favourite artists and bands are Mitski, Radiohead and Arctic Monkeys, however I do enjoy a lot of artists other than those few.
+            </p>
+          </div>
+
+          <!-- Projects -->
+          <div class="projects" id="projects">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm kenji-padding">
+                  <img src="./Assets/Images/Kenji logo.png" class="kenji circle floating img-responsive">
+                </div>
+                <div class="col-sm project-info">
+                  <h1 class="kenji-font">Kenji</h1>
+                  <hr>
+                  <p>
+                    A multi-purpose Discord bot that aims to bring functionality and features that are most valued by the Discord community. Development for Kenji began on the 26th November 2022, and is currently incomplete, however my goal is to be able to release Kenji within the next couple of months, assuming development goes as expected. Any updates on the development will be featured in this section.
+                  </p>
+                </div>
+              </div>
             </div>
+          </div>
+
         </body>
     </main>
 

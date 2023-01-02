@@ -3,8 +3,18 @@
     src: url("../Fonts/AnotherDanger.otf");
 }
 
+@font-face {
+  font-family: "Sakurata";
+  src: url("../Fonts/Sakurata.ttf");
+}
+
 .navbar-brand {
     font-family: "Another Danger";
+}
+
+.navbar {
+  padding-left: 3vw;
+  padding-right: 3vw;
 }
 
 .jumbotron {
@@ -19,6 +29,32 @@
     user-select: none;
 }
 
+.about {
+  min-height: 100vh;
+}
+
+.body-text {
+  padding: 10vw;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.kenji {
+  height: 25vw;
+}
+
+.kenji-font {
+  font-family: "Sakurata";
+}
+
+.project-info {
+  color: white;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
 body::-webkit-scrollbar {
     display: none;
 }
@@ -29,7 +65,7 @@ body::-webkit-scrollbar {
   --quadrary-color: #f6edb2;
 }
 
-.about {
+.jumbotron-colors {
   background: linear-gradient(
     90deg,
     var(--primary-color),
@@ -37,12 +73,30 @@ body::-webkit-scrollbar {
     var(--tertiary-color),
     var(--quadrary-color)
   );
+  background-size: 400% 400%;
   animation: bg-gradient 40s ease infinite;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
-  min-height: 93vh;
+  min-height: 100vh;
+}
+
+.projects {
+  background: linear-gradient(
+    90deg,
+    #EC275F,
+    #F25477,
+    #FFA7A6,
+    #D4E0EE
+  );
+  background-size: 400% 400%;
+  animation: bg-gradient 40s ease infinite;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 @keyframes bg-gradient {
@@ -54,5 +108,53 @@ body::-webkit-scrollbar {
   }
   100% {
     background-position: 0% 51%;
+  }
+}
+
+.floating {  
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  from { transform: translate(0,  0vh); }
+  50%  { transform: translate(0, 5vh); }
+  to   { transform: translate(0, -0vh); }    
+}
+
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 2vw;
+  }
+  
+  p {
+    font-size: 1.1vw;
+  }
+  
+  h2 {
+    font-size: 1.5vw;
+  }
+  .navbar-brand {
+    font-family: "Another Danger";
+    font-size: 2vw;
+  }
+
+  .nav-link {
+    font-size: 1vw;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .kenji {
+    height: 50vw;
+    height: 50vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .kenji-padding {
+    padding-bottom: 10vh;
   }
 }
