@@ -1,0 +1,58 @@
+@font-face {
+    font-family: "Another Danger";
+    src: url("../Fonts/AnotherDanger.otf");
+}
+
+.navbar-brand {
+    font-family: "Another Danger";
+}
+
+.jumbotron {
+    font-family: "Another Danger";
+    color: white;
+    font-size: 10vw;
+}
+
+.prevent-select {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+:root {
+  --primary-color: #69b7eb;
+  --secondary-color: #b3dbd3;
+  --tertiary-color: #f4d6db;
+  --quadrary-color: #f6edb2;
+}
+
+.about {
+  background: linear-gradient(
+    90deg,
+    var(--primary-color),
+    var(--secondary-color),
+    var(--tertiary-color),
+    var(--quadrary-color)
+  );
+  animation: bg-gradient 40s ease infinite;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 93vh;
+}
+
+@keyframes bg-gradient {
+  0% {
+    background-position: 0% 51%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 51%;
+  }
+}
