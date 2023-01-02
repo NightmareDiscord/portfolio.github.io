@@ -144,6 +144,10 @@ body::-webkit-scrollbar {
   .nav-link {
     font-size: 1vw;
   }
+
+  .kenji-padding {
+    padding-left: 15vw;
+  }
 }
 
 @media (max-width: 1199.98px) {
